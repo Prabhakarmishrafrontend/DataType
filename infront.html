@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Data Type</title>
+    <style>
+        #demo{
+            color: red;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>javascript DataType</h1>
+    <h2>When adding a number and a string javascript will treat the number as a string. </h2>
+    <p id="demo"></p>
+    <br><br>
+
+    <h2>Extra larger or extra small numbers can be written with scientific (exponential) notation: </h2>
+    <p id="expo"></p>
+    <br><br>
+
+    <h2>Array Indexes are zero-based, which means the first item is [0]</h2>
+    <p id="arrayindex"></p>
+
+
+    <script>
+         let x  = 16 + " " + "Volvo" + " " + "Raja ji National Park";
+         document.getElementById("demo").innerHTML = x
+
+         //exponentional type
+         let y = 123e5;
+         let z = 123e-5;
+         document.getElementById("expo").innerHTML = y + "<br>" + z;
+
+         //array index
+         const l = ['mera', 'tumhara', 'sabka', 'uska'];
+         document.getElementById("arrayindex").innerHTML = l[2];
+    </script>
+</body>
+</html>
